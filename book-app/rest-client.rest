@@ -1,0 +1,27 @@
+### Register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "1234"
+}
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "1234"
+}
+
+### Add Book
+POST http://localhost:3000/books
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+
+{
+  "title": "1984",
+  "author": "George Orwell"
+}
